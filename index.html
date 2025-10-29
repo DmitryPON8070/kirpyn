@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Владимир Кирпун — Президент Школы 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark: #0a0a0a;
+            --light: #f5f5f5;
+            --white: #ffffff;
+            --gray: #888888;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        body { background: var(--dark); color: var(--light); min-height: 100vh; position: relative; overflow-x: hidden; }
+        #bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url('https://images.unsplash.com/photo-1497633765639-5a0e7f7b3d0e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover; opacity: 0.22; filter: grayscale(100%) brightness(0.7); z-index: -1; }
+        .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(10,10,10,0.94), rgba(20,20,20,0.78)); z-index: -1; }
+
+        header { padding: 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .logo { display: flex; align-items: center; gap: 1rem; }
+        .logo img { width: 60px; height: 60px; border-radius: 50%; border: 3px solid white; }
+        .logo h1 { font-size: 1.8rem; font-weight: 900; background: linear-gradient(to right, white, #ccc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase; }
+        nav a { color: white; text-decoration: none; margin: 0 1rem; font-weight: 600; text-transform: uppercase; font-size: 0.95rem; }
+        nav a:hover { color: #ccc; }
+
+        .hero { text-align: center; padding: 6rem 1rem; max-width: 900px; margin: 0 auto; }
+        .hero h2 { font-size: 3.5rem; font-weight: 900; background: linear-gradient(to right, white, #aaa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.5rem; }
+        .hero .subtitle { font-size: 1.7rem; color: white; margin-bottom: 1.5rem; }
+        .hero p { font-size: 1.2rem; line-height: 1.8; opacity: 0.9; }
+
+        section { padding: 5rem 1rem; max-width: 1100px; margin: 0 auto; }
+        section h2 { font-size: 2.5rem; text-align: center; margin-bottom: 2.5rem; font-weight: 900; text-transform: uppercase; position: relative; }
+        section h2::after { content: ''; width: 100px; height: 4px; background: white; position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%); }
+
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: rgba(255,255,255,0.06); padding: 2rem; border-radius: 18px; border: 1px solid rgba(255,255,255,0.1); text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); background: rgba(255,255,255,0.12); }
+        .card i { font-size: 2.5rem; color: white; margin-bottom: 1rem; }
+        .card h3 { font-size: 1.5rem; margin-bottom: 1rem; color: white; }
+        .card p { opacity: 0.9; line-height: 1.7; font-size: 1rem; }
+
+        .photo { text-align: center; margin: 3rem 0; }
+        .photo img { max-width: 380px; width: 100%; border-radius: 20px; border: 6px solid white; filter: grayscale(100%); transition: 0.5s; }
+        .photo img:hover { filter: grayscale(0%); }
+
+        footer { text-align: center; padding: 4rem 1rem; background: rgba(0,0,0,0.5); border-top: 1px solid rgba(255,255,255,0.1); }
+        .social-links { margin: 2rem 0; }
+        .social-links a { color: white; font-size: 1.8rem; margin: 0 1rem; padding: 0.8rem; background: rgba(255,255,255,0.1); border-radius: 50%; width: 50px; height: 50px; display: inline-flex; align-items: center; justify-content: center; transition: 0.3s; }
+        .social-links a:hover { background: rgba(255,255,255,0.2); transform: translateY(-5px); }
+
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 2.5rem; }
+            header { flex-direction: column; text-align: center; gap: 1rem; }
+            nav a { display: block; margin: 0.5rem 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="bg"></div>
+    <div class="overlay"></div>
+
+    <header>
+        <div class="logo">
+            <img src="https://i.ibb.co/4kbDvRG/hotq-by-emsetbot-Ag-ADkms-AAt-Yq-YUs.png" alt="Логотип">
+            <h1>В. Кирпун</h1>
+        </div>
+        <nav>
+            <a href="#about">Обо мне</a>
+            <a href="#vision">Видение</a>
+            <a href="#program">Программа</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Владимир Кирпун</h2>
+        <div class="subtitle">Президент Школы 2025</div>
+        <p>Я инициирую изменения. Я решаю проблемы. Я доступен. Я — за школу, где каждый голос важен.</p>
+    </div>
+
+    <section id="about">
+        <h2>Обо мне</h2>
+        <div class="photo">
+            <img src="https://i.ibb.co/Xf6sfbhw/photo-2025-10-29-09-56-18.jpg" alt="Владимир Кирпун">
+        </div>
+        <p style="text-align:center; max-width:800px; margin:2rem auto; line-height:1.8; font-size:1.1rem;">
+            Я подхожу к жизни как к проекту: цели чёткие, результаты измеримые. Моя активность — не просто участие, а осознанный вклад. 
+            Я — часть школьной жизни и организатор городских мероприятий. Для меня важно быть примером: в учёбе, спорте, здоровом образе жизни. 
+            Я фокусируюсь на главном и довожу начатое до конца.
+        </p>
+    </section>
+
+    <section id="vision" style="background:rgba(0,0,0,0.3);">
+        <h2>Моё видение</h2>
+        <div class="features">
+            <div class="card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Инициировать изменения</h3>
+                <p>Влиять на решения, касающиеся реальных проблем. Действовать, а не ждать.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-users"></i>
+                <h3>Развивать школу</h3>
+                <p>Реализовывать значимые проекты, расширять горизонты.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-hands-helping"></i>
+                <h3>Помогать ученикам</h3>
+                <p>Решать насущные проблемы. Принимать нужные решения.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-phone"></i>
+                <h3>Быть доступным</h3>
+                <p>Телефон, почта, встречи. На каждый вопрос — ответ.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-heart"></i>
+                <h3>Делать годы лучше</h3>
+                <p>Сделать школьные годы яркими, безопасными, значимыми.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-running"></i>
+                <h3>Вдохновлять</h3>
+                <p>Жить активно и заражать этой энергией других.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="program">
+        <h2>Программа действий</h2>
+        <div class="features">
+            <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Безопасность</h3>
+                <p>Камеры, психолог, нулевая терпимость к травле.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-handshake"></i>
+                <h3>Справедливость</h3>
+                <p>Прозрачные выборы, равные права.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-users"></i>
+                <h3>Единство</h3>
+                <p>Мероприятия, традиции — одна семья.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-trophy"></i>
+                <h3>Достижения</h3>
+                <p>Конкурсы, поддержка талантов.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2 style="margin-bottom:1.5rem;">Присоединяйся</h2>
+        <div class="social-links">
+            <a href="#" onclick="alert('Telegram: t.me/kirpun2025')">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
+        <p style="opacity:0.7; margin-top:2rem;">© 2025 Владимир Кирпун — Кандидат в Президенты Школы</p>
+        <p style="opacity:0.6; font-size:0.9rem;">За изменения. За ответственность. За будущее.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
